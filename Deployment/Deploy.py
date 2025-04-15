@@ -1,13 +1,14 @@
 import streamlit as st
-import joblib
+import pickle
 import numpy as np
 import pandas as pd
 
 # Load model
-model = joblib.load("phone_price_model.pkl")
-scaler = joblib.load("scaler.pkl") 
+with open('phone_price_model.pkl', 'rb') as f:
+    model = pickle.load(f)
 
-
+with open('scaler.pkl', 'rb') as s:
+    model = pickle.load(s)
 
 st.title("📱 Phone Price Predictor")
 
