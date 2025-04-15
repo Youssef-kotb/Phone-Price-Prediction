@@ -4,8 +4,8 @@ import numpy as np
 import pandas as pd
 
 # Load model
-model = joblib.load('phone_price_model.pkl')
-scaler = joblib.load('scaler.pkl') 
+model = joblib.load(f'phone_price_model.pkl')
+scaler = joblib.load(f'scaler.pkl') 
 
 
 
