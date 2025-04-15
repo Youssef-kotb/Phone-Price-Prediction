@@ -8,7 +8,7 @@ with open('phone_price_model.pkl', 'rb') as f:
     model = pickle.load(f)
 
 with open('scaler.pkl', 'rb') as s:
-    model = pickle.load(s)
+    scaler = pickle.load(s)
 
 st.title("📱 Phone Price Predictor")
 
