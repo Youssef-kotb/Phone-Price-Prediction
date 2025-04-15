@@ -2,10 +2,13 @@ import streamlit as st
 import joblib
 import numpy as np
 import pandas as pd
+import os
+
 
 # Load model
-model = joblib.load('phone_price_model')
-scaler = joblib.load('scaler') 
+model = joblib.load(os.path.join(os.path.dirname(__file__), "phone_price_model.pkl"))
+scaler = joblib.load(os.path.join(os.path.dirname(__file__), "scaler.pkl"))
+
 
 st.title("📱 Phone Price Predictor")
 
